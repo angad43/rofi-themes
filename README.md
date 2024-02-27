@@ -27,6 +27,7 @@ Copy the files into /.config/
  ```
 $ cd rofi-themes/applet
 $ cp  -r rofi ~/.config/
+$ chmod +x ~/.config/rofi/launcher/laucher.sh
 ```
 Then Execute the launcher.sh for the applet to run
 
