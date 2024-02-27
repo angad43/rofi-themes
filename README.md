@@ -26,7 +26,7 @@ $ git clone https://github.com/angad43/rofi-themes.git
 Copy the files into /.config/
  ```
 $ cd rofi-themes/applet
-$ cp rofi ~/.config/
+$ cp  -r rofi ~/.config/
 ```
 Then Execute the launcher.sh for the applet to run
 
