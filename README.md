@@ -17,6 +17,10 @@ a window, or options provided by an external script. You can learn more about Ro
 
 
 ## Installation
-*Make sure you have rofi installed
+####Make sure you have rofi installed
 
--Then clone this repository
+####Then clone this repository
+ ```
+$ git clone https://github.com/angad43/rofi-themes.git
+```
+
