@@ -6,7 +6,7 @@
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "JetBrains Mono Nerd Font 10";
+    font:                        "JetBrains Mono Nerd Font 14"; /* Increased font size */
     background:                  rgba(16, 16, 16, 0.9); 
     background-alt:              rgba(37, 37, 37, 0.9); 
     foreground:                  #FFFFFF;
@@ -21,12 +21,12 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       600px; 
-    height:                      500px; 
+    width:                       1000px;  /* Increased window width */
+    height:                      800px;   /* Increased window height */
     x-offset:                    0px;
     y-offset:                    0px;
     enabled:                     true;
-    border-radius:               40px; 
+    border-radius:               60px;    /* Increased border radius */
     cursor:                      "default";
     background-color:            @background;
 }
@@ -34,15 +34,15 @@ window {
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
-    spacing:                     10px; 
+    spacing:                     20px;    /* Increased spacing */
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "listbox", "inputbar" ];
 }
 
 listbox {
-    spacing:                     15px;
-    padding:                     20px;
+    spacing:                     20px;
+    padding:                     40px;    /* Increased padding */
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
@@ -51,8 +51,8 @@ listbox {
 /*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
-    spacing:                     5px;
-    padding:                     10px 20px;
+    spacing:                     10px;
+    padding:                     20px 40px; /* Increased padding */
     background-color:            transparent;
     text-color:                  @foreground;
     orientation:                 horizontal;
@@ -63,8 +63,8 @@ textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
     str:                         "";
-    padding:                     10px 12px;
-    border-radius:               50%; 
+    padding:                     20px;    /* Adjusted padding */
+    border-radius:               60%; 
     background-color:            @background-alt;
     text-color:                  inherit;
 }
@@ -72,8 +72,8 @@ textbox-prompt-colon {
 entry {
     enabled:                     true;
     expand:                      true;
-    padding:                     10px 14px; 
-    border-radius:               50%;
+    padding:                     20px 30px; /* Adjusted padding */
+    border-radius:               60%;
     background-color:            @background-alt;
     text-color:                  inherit;
     cursor:                      text;
@@ -85,7 +85,7 @@ entry {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       5;
+    lines:                       8;       /* Increased number of lines */
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -94,7 +94,7 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     
-    spacing:                     10px;
+    spacing:                     15px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";
@@ -103,9 +103,9 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    spacing:                     10px;
-    padding:                     12px;
-    border-radius:               50%; 
+    spacing:                     20px;    /* Adjusted spacing */
+    padding:                     20px;    /* Increased padding */
+    border-radius:               60%; 
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
@@ -135,7 +135,7 @@ element.selected {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32px;
+    size:                        50px;    /* Increased icon size */
     cursor:                      inherit;
 }
 
@@ -153,8 +153,8 @@ message {
 }
 
 textbox {
-    padding:                     12px;
-    border-radius:               50%; 
+    padding:                     20px;    /* Increased padding */
+    border-radius:               60%; 
     background-color:            @background-alt;
     text-color:                  @foreground;
     vertical-align:              0.5;
@@ -162,9 +162,8 @@ textbox {
 }
 
 error-message {
-    padding:                     15px;
+    padding:                     30px;    /* Increased padding */
     border-radius:               0px;
     background-color:            @background;
     text-color:                  @foreground;
 }
-
